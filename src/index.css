@@ -1,8 +1,8 @@
-body {
-
+*{ 
+  margin: 0; 
+  padding: 0; 
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Karla', sans-serif;
+  background: #F5F7FB;
 }

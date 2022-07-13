@@ -1,0 +1,55 @@
+
+.app{ 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+}
+.button-primary{ 
+  font-family: 'Karla', sans-serif;
+  background: #4D5B9E;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px 22px; 
+
+  color: #F5F7FB;
+  overflow: hidden;
+  border: none; 
+  outline: none;
+  cursor: pointer;
+}
+
+.img-top{ 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  z-index: -1;
+}
+.img-but{ 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  z-index: -1; 
+}
+
+.game-intro{ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.game-intro--title{ 
+  font-weight: 700;
+  font-size: 31px;
+  color: #293264;
+  margin-bottom: 7px;
+}
+
+.game-intro--description{ 
+  font-weight: 400;
+  font-size: 16px;
+  color: #293264;
+  margin-bottom: 29px;
+}
