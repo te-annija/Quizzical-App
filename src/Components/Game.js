@@ -9,15 +9,19 @@ function Game(props) {
   const [correctAnswersCount, setCorrectAnswersCount] = React.useState(0); 
   const [isAllAnswered, setIsAllAnswered] = React.useState(false);
 
+  const category = props.choice.category === ''? '' : '&category='+ props.choice.category;
+  const difficulty = props.choice.difficulty === ''? '' : '&difficulty='+ props.choice.difficulty;
+  const apiURL = "https://opentdb.com/api.php?amount=5"+category+difficulty;
+
   React.useEffect(()=>{
-        fetch("https://opentdb.com/api.php?amount=5&type=multiple")
+        fetch(apiURL)
         .then(response => response.json())
         .then(data => setAllQuestions(data.results.map(question => { 
             return {...question, id: nanoid(), isQSelected: false, options: [...question.incorrect_answers.map(answ => ({id: nanoid(), option: answ, isSelected:false})), {id:nanoid(), option:question.correct_answer, isSelected:false}]}
             })
           ))
   },[]); 
-
+console.log(allQuestions)
   function selectAnsw(event, optId, qId){ 
     if(!canShowAnswers){
       setAllQuestions(prevQuestions => { 

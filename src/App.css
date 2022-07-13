@@ -20,6 +20,9 @@
   outline: none;
   cursor: pointer;
 }
+.button-primary:hover{
+  box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
 
 .img-top{ 
   position: fixed; 
@@ -52,4 +55,37 @@
   font-size: 16px;
   color: #293264;
   margin-bottom: 29px;
+}
+.game-form{ 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;  
+  max-width: 300px;
+  margin-bottom: 20px;  
+}
+.game-form label{ 
+  font-weight: 600;
+  font-size: 16px;
+  color: #293264;
+}
+.form-select{
+  font-family: 'Karla', sans-serif;
+  margin-left: 13px;
+  box-sizing: border-box;
+  border:none; 
+  box-shadow: 0 0 1pt 0.5pt #D3D3D3;
+  border-radius: 5px;
+  padding: 4px 0;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  color: #293264;
+  background-color: white; 
+  
+}
+
+.form-select:hover{
+  box-shadow: 0 0 5pt 0.5pt #D3D3D3;
 }

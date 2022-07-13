@@ -29,6 +29,10 @@ margin-top: 14px;
   background-color: transparent;
   overflow: hidden;
   outline: none;
+  transition: transform .1s;
+}
+.question--option:hover {
+  transform: scale(1.05); 
 }
 
 @media screen and (max-width: 600px) {
