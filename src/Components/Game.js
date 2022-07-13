@@ -2,6 +2,7 @@ import './Game.css';
 import React from 'react';
 import Question from './Question';
 import { nanoid } from 'nanoid';
+import Confetti from 'react-confetti';
 
 function Game(props) {
   const [allQuestions, setAllQuestions] = React.useState([]);
@@ -50,6 +51,7 @@ console.log(allQuestions)
 
   }, 
   [allQuestions])
+  console.log(allQuestions)
 
   const displayQuestions = allQuestions.map(question => { 
     return <Question 
@@ -90,8 +92,9 @@ console.log(allQuestions)
         <button className="button-primary" onClick={startNewGame} > Play Again</button>
         </>
         }
-        
       </div>
+      
+      {(correctAnswersCount==5 && canShowAnswers) && <Confetti  numberOfPieces={250} colors={['#F8BCBC', '#94D7A2', '#4D5B9E', '#DEEBF8', '#FFFAD1', '#F46197', '#2CA58D', '#F80000']}/>}  
       
 
     </section>

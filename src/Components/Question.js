@@ -4,7 +4,7 @@ import { decode } from 'html-entities';
 
 function Question(props) {
 
-    const sortOptions = [...props.options].sort((a, b) => a.id > b.id ? -1 : 1)
+    const sortOptions = [...props.options].sort((a, b) => ((a.option === "False")? 1: (a.option === "True") ? -1 : (a.id > b.id ? -1 : 1) ))
     const displayOptions = sortOptions.map(option=>{
       var color; 
       if(option.isSelected){ 
