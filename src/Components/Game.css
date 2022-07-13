@@ -13,5 +13,19 @@
 .results{ 
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 20px 0; 
+}
+
+.results--title{ 
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: #293264;
+  margin-right: 15px; 
+}
+
+.button-primary:disabled{ 
+  opacity: 0.5; 
+  cursor: not-allowed;
 }

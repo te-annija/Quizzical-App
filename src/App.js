@@ -9,6 +9,10 @@ function App() {
   function startGame(){ 
     setGameStarted(true);
   }
+  function handleGameStart(){
+    setGameStarted(false);
+  }
+
   return (
     <div className="app">
       {gameStarted === false ?
@@ -18,7 +22,7 @@ function App() {
           <button className="button-primary" onClick={startGame}>Start Quiz</button>
         </section>
       :
-        <Game/>
+        <Game handleGameStart={handleGameStart}/>
         
       }
       <img src={blobTop} alt="decoration" className="img-top"></img>
