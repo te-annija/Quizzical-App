@@ -3,7 +3,7 @@
   display: flex; 
   justify-content: center; 
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .button-primary{ 
   font-family: 'Karla', sans-serif;
@@ -22,13 +22,13 @@
 }
 
 .img-top{ 
-  position: absolute; 
+  position: fixed; 
   top: 0; 
   right: 0; 
   z-index: -1;
 }
 .img-but{ 
-  position: absolute; 
+  position: fixed; 
   bottom: 0; 
   left: 0; 
   z-index: -1; 

@@ -30,3 +30,16 @@ margin-top: 14px;
   overflow: hidden;
   outline: none;
 }
+
+@media screen and (max-width: 600px) {
+  .question--options{ 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .question--option{
+    margin-bottom: 5px;
+  }
+  .question--title{
+    margin-left: 15px; 
+  }
+}
