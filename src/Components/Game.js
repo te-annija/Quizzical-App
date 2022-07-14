@@ -22,7 +22,6 @@ function Game(props) {
             })
           ))
   },[]); 
-console.log(allQuestions)
   function selectAnsw(event, optId, qId){ 
     if(!canShowAnswers){
       setAllQuestions(prevQuestions => { 
@@ -51,8 +50,7 @@ console.log(allQuestions)
 
   }, 
   [allQuestions])
-  console.log(allQuestions)
-
+ 
   const displayQuestions = allQuestions.map(question => { 
     return <Question 
       title={question.question} 

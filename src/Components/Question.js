@@ -16,7 +16,7 @@ function Question(props) {
       else { 
         color = "transparent";
       }
-
+      
       const styles = { 
         background: props.canShowAnswer && option.option === props.correct_answer? "#94D7A2" : color, 
         border: option.isSelected || (props.canShowAnswer&& (option.option === props.correct_answer))? "none": "1px solid #4D5B9E",

@@ -7,7 +7,6 @@ import Game from './Components/Game';
 function App() {
   const [gameStarted, setGameStarted] = React.useState(false);
   function startGame(){ 
-    console.log(formData);
     setGameStarted(true);
   }
   function handleGameStart(){
