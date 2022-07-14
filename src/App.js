@@ -71,6 +71,10 @@ function App() {
       }
       <img src={blobTop} alt="decoration" className="img-top"></img>
       <img src={blobBut} alt="decoration" className="img-but"></img>
+
+      <footer className="footer">
+        <small>Developed by Annija Karitone</small>
+			</footer>
     </div>
   );
 }

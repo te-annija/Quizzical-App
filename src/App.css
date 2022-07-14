@@ -1,14 +1,17 @@
 
 .app{ 
-  display: flex; 
+  display: flex;
+  flex-direction: column;  
   justify-content: center; 
   align-items: center;
   min-height: 100vh;
+  position: relative;
 }
 .button-primary{ 
   font-family: 'Karla', sans-serif;
   background: #4D5B9E;
   border-radius: 10px;
+  margin-bottom: 20px; 
   font-weight: 600;
   font-size: 10px;
   text-align: center;
@@ -88,4 +91,10 @@
 
 .form-select:hover{
   box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+
+.footer{ 
+  position: absolute; 
+  bottom: 0; 
+  padding: 10px;
 }
